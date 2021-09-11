@@ -15,30 +15,38 @@ export default function Articles({ posts }) {
                 <title>Articles</title>
             </Head>
             <Header />
-            {posts.map((post, index) => (
-                <Post post={post} />
-            ))}
+            <div>
+                {posts.map((post, index) => (
+                    <Post key={index} post={post} />
+                ))}
+            </div>
             <Footer />
         </>
     )
 }
 
 export async function getStaticProps() {
+    // Get files from the posts dir
     const files = fs.readdirSync(path.join('posts'))
 
-    const posts = files.map(filename => {
-        const slug = filename.replace('md', '')
+    // Get slug and frontmatter from posts
+    const posts = files.map((filename) => {
+        // Create slug
+        const slug = filename.replace('.md', '')
 
-        const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
+        // Get frontmatter
+        const markdownWithMeta = fs.readFileSync(
+            path.join('posts', filename),
+            'utf-8'
+        )
 
         const { data: frontmatter } = matter(markdownWithMeta)
+
         return {
             slug,
-            frontmatter
+            frontmatter,
         }
     })
-
-    console.log(posts);
 
     return {
         props: {

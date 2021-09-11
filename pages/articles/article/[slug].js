@@ -3,10 +3,11 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
-import Header from '../../components/Header'
+import Header from '../../../components/Header'
 
 
-export default function PostPage({ frontmatter: { title, date, excerpt }, slug, content }) {
+export default function PostPage({
+    frontmatter: { title, date }, slug, content, }) {
     return (
         <>
             <Header />
@@ -23,25 +24,23 @@ export default function PostPage({ frontmatter: { title, date, excerpt }, slug, 
 
 
 export async function getStaticPaths() {
-
     const files = fs.readdirSync(path.join('posts'))
 
-    const paths = files.map(filename => ({
+    const paths = files.map((filename) => ({
         params: {
-            slug: filename.replace('md', '')
-        }
+            slug: filename.replace('.md', ''),
+        },
     }))
-
 
     return {
         paths,
-        fallback: false
+        fallback: false,
     }
 }
 
 export async function getStaticProps({ params: { slug } }) {
 
-    const markdownWithMeta = fs.readFileSync(path.join('posts', slug + 'md'), 'utf-8')
+    const markdownWithMeta = fs.readFileSync(path.join('posts', slug + '.md'), 'utf-8')
 
     const { data: frontmatter, content } = matter(markdownWithMeta)
 
@@ -49,7 +48,7 @@ export async function getStaticProps({ params: { slug } }) {
         props: {
             frontmatter,
             slug,
-            content
+            content,
         },
     }
 }

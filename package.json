@@ -2,15 +2,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.1.2",
     "gray-matter": "^4.0.3",
+    "markdown-it": "^11.0.1",
     "marked": "^3.0.3",
     "next": "latest",
+    "next-mdx-frontmatter": "^0.0.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "^17.0.2",
@@ -24,6 +26,7 @@
     "@types/node": "^16.9.1",
     "@types/react": "^17.0.20",
     "autoprefixer": "^10.3.4",
+    "frontmatter-markdown-loader": "^3.6.3",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.12",
     "typescript": "^4.4.3"
