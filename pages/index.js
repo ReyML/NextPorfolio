@@ -1,82 +1,68 @@
+// @ts-nocheck
 import Head from 'next/head'
+import Image from 'next/image'
+import profilePic from '../public/log.jpeg'
+import Link from 'next/link'
+import FooterMain from '../components/FooterMain'
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-row flex-wrap justify-center" >
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+          content="Indie maker trying to learn many things at once. I know, I have to focus. My dream is to see this description one day on Google :)" />
+        <title>Reyml - Reynol Martinez</title>
+        <link rel="icon" href="/log.jpeg" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
+      <main className="my-16 mt- md:flex md:flex-row justify-center items-center">
+        <section className="flex justify-start flex-wrap flex-col my-18 mx-8 sm:mx-36">
+          <h1
+            className="my-6 text-white text-4xl font-extrabold md:tracking-widest leading-tight md:leading-snug font-sans ">
+            Hello, I'm Reyml.
+            Welcome to my Portfolio
+          </h1>
+
+          <p
+            className="select-none mt-16 sm:mt-8 whitespace-pre-line text-base tracking-wide font-medium text-white font-open-sans-condensed">
+            Built
+            with Tailwind
+            NextJS!</p>
+          <div className="block relative ml-4 mr-20 mt-10 mb-12 border-green-500">
+            <picture className="">
+              <Image src={profilePic} className="rounded-full"
+                alt="a picture for my web" width="100" height="100"
+              />
+            </picture>
+          </div>
+        </section>
+
+
+        <div className="flex justify-center flex-col flex-wrap items-center md:w-3/6 md:mr-20 ">
+
+          <Link href="/articles/">
+            <a className="focus:outline-none hover:bg-black ease-in-out duration-200 hover:scale-110 mx-auto w-5/6 bg-white rounded-sm mt-2 h-24 flex items-center text-center">
+              <p className="font-mono text-2xl uppercase mx-auto hover:text-white text-gray-500 font-semibold tracking-widest p-2 px-24"> Articles </p>
+            </a>
+          </Link>
+          <a href="https://urbanemoji.netlify.app/"
+            class="focus:outline-none hover:bg-black ease-in-out duration-200 hover:scale-110 mx-auto w-5/6 bg-white rounded-sm mt-2 h-24 flex items-center text-center">
+            <p class="font-mono text-2xl uppercase mx-auto hover:text-white text-gray-500 font-semibold tracking-widest p-2 px-24">
+              Urbanemoji</p>
           </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="mailto:laraveowling@gmail.com"
+            className="focus:outline-none hover:bg-black ease-in-out duration-200 hover:scale-110 mx-auto w-5/6 bg-white rounded-sm mt-2 h-24 flex items-center text-center">
+            <p className="font-mono text-2xl uppercase mx-auto hover:text-white text-gray-500 font-semibold tracking-widest p-2 px-24">
+              Contact Me</p>
           </a>
         </div>
-      </main>
+      </main >
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      <FooterMain />
     </div>
   )
 }
