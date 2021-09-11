@@ -26,10 +26,6 @@ export default function Header() {
                                 className="border-b-2 border-transparent text-white mx-1.5 sm:mx-6 p-2 text-xs uppercase">Urban
                                 Emoji</a>
                         </Link>
-                        <Link href="mailto:laraveowling@gmail.com">
-                            <a className="border-b-2 border-transparent text-white  mx-1.5 sm:mx-6  p-2 text-xs uppercase">Contact
-                                Me</a>
-                        </Link>
                     </div>
                 </nav>
             </div>

@@ -4,6 +4,8 @@ import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
 import Header from '../../../components/Header'
+import Footer from '../../../components/Footer'
+
 
 
 export default function PostPage({
@@ -11,13 +13,14 @@ export default function PostPage({
     return (
         <>
             <Header />
-            <div className="mx-16 text-gray-100 mt-10 ">
+            <div className="mx-16 text-gray-100 mt-10 mb-">
                 <div className="mt-8">
                     <h1>{title}</h1>
                     <p>Posted on {date}</p>
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
             </div>
+            <Footer />
         </>
     )
 }
