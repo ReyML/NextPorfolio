@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-row flex-wrap justify-center" >
       <Head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=0.9" />
         <meta name="description"
           content="Indie maker trying to learn many things at once. I know, I have to focus. My dream is to see this description one day on Google :)" />
@@ -50,8 +50,8 @@ export default function Home() {
             </a>
           </Link>
           <a href="https://urbanemoji.netlify.app/"
-            class="focus:outline-none hover:bg-black ease-in-out duration-200 hover:scale-110 mx-auto w-5/6 bg-white rounded-sm mt-2 h-24 flex items-center text-center">
-            <p class="font-mono text-2xl uppercase mx-auto hover:text-white text-gray-500 font-semibold tracking-widest p-2 px-24">
+            className="focus:outline-none hover:bg-black ease-in-out duration-200 hover:scale-110 mx-auto w-5/6 bg-white rounded-sm mt-2 h-24 flex items-center text-center">
+            <p className="font-mono text-2xl uppercase mx-auto hover:text-white text-gray-500 font-semibold tracking-widest p-2 px-24">
               Urbanemoji</p>
           </a>
           <a href="mailto:laraveowling@gmail.com"
