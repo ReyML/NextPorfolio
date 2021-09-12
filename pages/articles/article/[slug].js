@@ -5,22 +5,22 @@ import marked from 'marked'
 import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 
-
-
 export default function PostPage({
     frontmatter: { title, date }, slug, content, }) {
     return (
-        <>
+        <body className='max-w-max overflow-x-hidden'>
             <Header />
-            <div className="mx-16 text-gray-100 mt-10">
+            <div className="text-gray-200 leading-normal tracking-normal">
                 <div className="mt-8">
-                    <h1>{title}</h1>
-                    <p>Posted on {date}</p>
+                    <h1 className="mx-8">{title}</h1>
+                    <p className="mx-8">Posted on {date}</p>
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+                <div className="mx-8">
+                    <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </>
+        </body>
     )
 }
 

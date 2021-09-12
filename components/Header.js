@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="relative w-full top-0 mb-8">
             <div>
-                <nav className="bg-[#292929] bg-opacity-0">
+                <nav className="bg-[#292929] bg-opacity-50">
                     <div className="container flex items-center flex-wrap flex-row justify-end p-6 mx-auto text-gray-600 capitalize">
                         <Link href="/">
                             <a className="absolute left-8 w-16 h-16 -translate-x-5">
