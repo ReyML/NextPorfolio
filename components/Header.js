@@ -1,6 +1,6 @@
 // @ts-nocheck
 import Image from 'next/image'
-import profilePic from '../public/log.jpeg'
+import profilePic from '../public/profile/log.jpeg'
 import Link from 'next/link'
 
 export default function Header() {
