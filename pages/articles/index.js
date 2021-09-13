@@ -11,7 +11,7 @@ export default function Articles({ posts }) {
     return (
         <>
             <Head>
-                <title>Articles</title>
+                <title>Articles | Reynol Martinez</title>
             </Head>
             <Header />
             <div>

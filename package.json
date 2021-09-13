@@ -16,6 +16,7 @@
     "next": "latest",
     "next-fonts": "^1.5.1",
     "next-mdx-frontmatter": "^0.0.4",
+    "next-seo": "^4.26.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "react": "^17.0.2",

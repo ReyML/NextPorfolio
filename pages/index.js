@@ -8,13 +8,9 @@ export default function Home() {
   return (
     <div className="flex flex-row flex-wrap justify-center" >
       <Head>
-        <meta charset="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description"
           content="Indie maker trying to learn many things at once. I know, I have to focus. My dream is to see this description one day on Google :)" />
-        <title>Reyml - Reynol Martinez</title>
-        <link rel="icon" href="/profile/log.jpeg" />
+        <title>Reyml | Reynol Martinez</title>
       </Head>
 
       <main className="my-28 flex flex-wrap justify-center items-center w-5/6 md:w-3/6 backdrop-blur-md shadow-2xl rounded-md">
