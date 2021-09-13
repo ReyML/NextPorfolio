@@ -10,7 +10,7 @@ export default function PostPage({
     return (
         <>
             <Header />
-            <div className="text-gray-200 leading-normal tracking-normal">
+            <div className="text-gray-200 leading-normal tracking-normal no-hor">
                 <div className="mt-8">
                     <h1 className="mx-8">{title}</h1>
                     <p className="mx-8">Posted on {date}</p>
@@ -18,7 +18,6 @@ export default function PostPage({
                 <div className="mx-8">
                     <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
                 </div>
-                <Footer />
             </div>
         </>
     )

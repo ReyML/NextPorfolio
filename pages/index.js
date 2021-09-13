@@ -1,7 +1,5 @@
 // @ts-nocheck
 import Head from 'next/head'
-import Image from 'next/image'
-import profilePic from '../public/profile/log.jpeg'
 import Link from 'next/link'
 import FooterMain from '../components/FooterMain'
 
@@ -32,12 +30,12 @@ export default function Home() {
             Built
             with Tailwind and
             NextJS!</p>
-          <div className="flex justify-center my-6 border-green-500">
-            <picture className="">
-              <Image src={profilePic} className="rounded-full"
-                alt="a picture for my web" width="100" height="100"
-              />
-            </picture>
+          <div className="flex justify-center my-6 border-green-500 border-2">
+            <Link href='/'>
+              <a className="hover:scale-125 ease-linear duration-150 hover:bg-red-300  text-lg hover:rotate-12 rounded-full w-20 h-20 hover:text-red-700 bg-red-400 font-nunito text-white tracking-wider flex justify-center items-center">
+                Reyml
+              </a>
+            </Link>
           </div>
         </section>
 
@@ -45,24 +43,24 @@ export default function Home() {
         <div className="flex justify-center flex-row flex-wrap sm:flex-nowrap items-center w-5/6 pb-8">
           <Link href="/articles/">
 
-            <a className="focus:outline-none ease-in-out duration-200 hover:scale-125 ring-black ring-2 ring-inset mx-2 w-5/6  mt-2 h-12 flex rounded-md items-center text-center">
+            <a className="focus:outline-none ease-in-out duration-200 hover:scale-110 ring-black ring-2 ring-inset mx-2 w-5/6  mt-2 h-12 flex rounded-md items-center text-center">
               <p className="font-fira uppercase mx-auto text-center text-green-100 tracking-wider p-2"> Articles </p>
             </a>
           </Link>
           <a href="https://urbanemoji.netlify.app/"
-            className="focus:outline-none ease-in-out duration-200 hover:scale-125 ring-black ring-2 ring-inset mx-2 w-5/6  mt-2 h-12 flex rounded-md  items-center text-center">
+            className="focus:outline-none ease-in-out duration-200 hover:scale-110 ring-black ring-2 ring-inset mx-2 w-5/6  mt-2 h-12 flex rounded-md  items-center text-center">
             <p className="font-fira uppercase mx-auto text-center text-green-200 tracking-widest p-2">
               Urbanemoji</p>
           </a>
           <a href="mailto:laraveowling@gmail.com"
-            className="focus:outline-none ease-in-out duration-200 hover:scale-125 ring-black ring-2 ring-inset mx-2 w-5/6  mt-2 h-12 flex rounded-md items-center text-center">
+            className="focus:outline-none ease-in-out duration-200 hover:scale-110 ring-black ring-2 ring-inset mx-2 w-5/6  mt-2 h-12 flex rounded-md items-center text-center">
             <p className="font-fira uppercase mx-auto text-center text-indigo-300 tracking-wider p-2">
               Contact Me</p>
           </a>
         </div>
       </main >
 
-      {/* <FooterMain /> */}
+      <FooterMain />
     </div >
   )
 }
