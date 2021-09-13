@@ -19,7 +19,7 @@ export default function Articles({ posts }) {
                     <Post key={index} post={post} />
                 ))}
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

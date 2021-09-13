@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </main >
 
-      <FooterMain />
+      {/* <FooterMain /> */}
     </div >
   )
 }
