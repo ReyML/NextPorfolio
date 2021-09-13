@@ -9,7 +9,11 @@ html, body {
     overflow-y: auto !important;
     background-repeat: repeat;
     background-size: contain;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
 }
+
 
 * {
   box-sizing: border-box;

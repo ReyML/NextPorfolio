@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -18,6 +19,7 @@ export default function Articles({ posts }) {
                     <Post key={index} post={post} />
                 ))}
             </div>
+            <Footer />
         </>
     )
 }

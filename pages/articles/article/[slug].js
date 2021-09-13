@@ -8,7 +8,7 @@ import Footer from '../../../components/Footer'
 export default function PostPage({
     frontmatter: { title, date }, slug, content, }) {
     return (
-        <body className='max-w-max overflow-x-hidden'>
+        <>
             <Header />
             <div className="text-gray-200 leading-normal tracking-normal">
                 <div className="mt-8">
@@ -20,7 +20,7 @@ export default function PostPage({
                 </div>
                 <Footer />
             </div>
-        </body>
+        </>
     )
 }
 
