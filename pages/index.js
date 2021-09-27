@@ -4,6 +4,7 @@ import Link from 'next/link'
 import FooterMain from '../components/FooterMain'
 
 
+
 export default function Home() {
   return (
     <div className="flex flex-row flex-wrap justify-center" >
