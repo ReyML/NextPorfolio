@@ -4,7 +4,6 @@ import Link from 'next/link'
 import FooterMain from '../components/FooterMain'
 
 
-
 export default function Home() {
   return (
     <div className="flex flex-row flex-wrap justify-center" >
@@ -15,6 +14,11 @@ export default function Home() {
       </Head>
 
       <main className="my-28 flex flex-wrap justify-center items-center w-5/6 md:w-3/6 backdrop-blur-md shadow-2xl rounded-md">
+        <Link href='https://www.amazon.ae/AccLoo-Computer-Adjustable-Noise-Reducing-Conferencing/dp/B09DTZXZJR?keywords=webcam+for+laptop&qid=1642694523&sprefix=webcam%2Caps%2C211&sr=8-17&linkCode=ll1&tag=2102d22-21&linkId=6eaf5fd0ef0f32090968897880d42883&language=en_AE&ref_=as_li_ss_tl'>
+        <a>
+          Amazon link
+        </a>
+        </Link>
         <section className="flex justify-start flex-col my-18 mx-8">
           <h1
             className="font-nunito bg-clip-text text-transparent bg-gradient-to-r from-green-200 via-green-300 to-blue-500 text-2xl text-center md:tracking-widest mt-8 mb-4 leading-tight md:leading-snug">
