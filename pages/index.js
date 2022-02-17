@@ -18,8 +18,13 @@ export default function Home() {
         <Link href="https://www.amazon.ae/AccLoo-Computer-Adjustable-Noise-Reducing-Conferencing/dp/B09DTZXZJR?keywords=webcam+for+laptop&qid=1642694523&sprefix=webcam%2Caps%2C211&sr=8-17&linkCode=ll1&tag=2102d22-21&linkId=6eaf5fd0ef0f32090968897880d42883&language=en_AE&ref_=as_li_ss_tl">
           <a>Amazon link</a>
         </Link>
+
         <Link href="https://www.amazon.ae/UGREEN-Charger-Adapter-compatible-Samsung/dp/B07WHPVWM2?&linkCode=ll1&tag=2102d22-21&linkId=9e10f736a35441b04e3f32b57c9ab51d&language=en_AE&ref_=as_li_ss_tl">
           <a>Amazon link charger</a>
+        </Link>
+        </br>
+        <Link href="https://www.amazon.ae/Stereo-Player-Bluetooth-remote-control/dp/B07NV8H6GT?pd_rd_w=LpeCh&pf_rd_p=e8436acd-ea8d-4c2a-8600-d7ed76834394&pf_rd_r=FVF6WJD45AWMC3JMN8XS&pd_rd_r=f77de310-62da-4572-ba67-7053d7b198e5&pd_rd_wg=5Utg2&pd_rd_i=B07NV8H6GT&psc=1&linkCode=ll1&tag=2102d22-21&linkId=07e864c82fbc71a241d273e5627c3967&language=en_AE&ref_=as_li_ss_tl">
+          <a>Player</a>
         </Link>
         <section className="flex justify-start flex-col my-18 mx-8">
           <h1 className="font-nunito bg-clip-text text-transparent bg-gradient-to-r from-green-200 via-green-300 to-blue-500 text-2xl text-center md:tracking-widest mt-8 mb-4 leading-tight md:leading-snug">
